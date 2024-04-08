@@ -11,23 +11,37 @@
             align-items: center;
             height: 100vh;
             flex-direction: column;
+            text-align: center; /* Ensure text and elements are centered */
         }
         img {
             width: 100%;
             max-width: 600px;
             height: auto;
-            margin-bottom: 20px; /* Add some spacing below the image */
+            margin-top: 20px; /* Add some spacing above the image */
+        }
+        button {
+            font-size: 18px; /* Larger font size */
+            padding: 10px 20px; /* Larger button size */
+            border-radius: 4px; /* Rounded corners */
+            cursor: pointer; /* Cursor changes to pointer to indicate it's clickable */
+        }
+        .instruction-text {
+            margin-bottom: 20px; /* Space between text and button */
+            font-size: 16px; /* Instruction text size */
         }
     </style>
 </head>
 <body>
+
+    <div class="instruction-text">
+        Click the download .pdf button to get a high resolution version of the map
+    </div>
     <button onclick="downloadPDF()">Download as PDF</button>
-    <img src="customer context map.png" alt="thumbnail of the map, click the downlaod .pdf button to get a high resaloution version of the map" style="cursor: pointer;" onclick="downloadPDF()">
-    
+    <img src="customer context map.png" alt="thumbnail of the map, click the download .pdf button to get a high resolution version of the map" style="cursor: pointer;" onclick="downloadPDF()">
 
 <script>
     function downloadPDF() {
-        window.location.href = 'Customer Context Map.pdf';
+        window.location.href = 'Customer Context Map.pdf'; // Change this to the actual path of your PDF file
     }
 </script>
 
