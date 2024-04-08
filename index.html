@@ -3,10 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Context map</title>
+    <title>Image Display and PDF Download</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin-bottom: 20px; /* Add some spacing below the image */
+        }
+    </style>
 </head>
 <body>
-    <img src="customer context map.png" alt="image thumbnail of the customer context map" style="width: 100%; max-width: 600px; height: auto;">
+
+    <img src="customer context map.png" alt="Description of the image" style="cursor: pointer;" onclick="downloadPDF()">
+    <button onclick="downloadPDF()">Download as PDF</button>
+
+<script>
+    function downloadPDF() {
+        window.location.href = 'your-pdf-file.pdf'; // Change 'your-pdf-file.pdf' to the path of your PDF file
+    }
+</script>
+
 </body>
 </html>
-
