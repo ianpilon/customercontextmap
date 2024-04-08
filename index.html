@@ -5,31 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Display and PDF Download</title>
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
-            text-align: center; /* Ensure text and elements are centered */
-        }
-        img {
-            width: 100%;
-            max-width: 600px;
-            height: auto;
-            margin-top: 20px; /* Add some spacing above the image */
-        }
-        button {
-            font-size: 18px; /* Larger font size */
-            padding: 10px 20px; /* Larger button size */
-            border-radius: 4px; /* Rounded corners */
-            cursor: pointer; /* Cursor changes to pointer to indicate it's clickable */
-        }
-        .instruction-text {
-            margin-bottom: 20px; /* Space between text and button */
-            font-size: 16px; /* Instruction text size */
-        }
-    </style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        text-align: center; /* Ensure text and elements are centered */
+    }
+    img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        margin-top: 20px; /* Add some spacing above the image */
+    }
+    button {
+        font-size: 18px; /* Larger font size */
+        padding: 10px 20px; /* Larger button size */
+        border-radius: 4px; /* Rounded corners */
+        cursor: pointer; /* Cursor changes to pointer to indicate it's clickable */
+        background-color: #b87333; /* Copper color for the background */
+        border: 2px solid #b87333; /* Copper color for the border */
+        color: white; /* White text color for better contrast */
+        transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+    }
+    button:hover {
+        background-color: #9c6220; /* Slightly darker shade of copper for hover effect */
+        color: #ffe8d6; /* Light color for text on hover for better visibility */
+    }
+    .instruction-text {
+        margin-bottom: 20px; /* Space between text and button */
+        font-size: 16px; /* Instruction text size */
+    }
+</style>
 </head>
 <body>
 
